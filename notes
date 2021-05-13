@@ -1,4 +1,5 @@
 Ansible configuration file
+
 1. Default location: /etc/ansible/ansible.cfg
 2. We can have conf file in  current directory
 3. We can put conf file on home directory of a user as hidden file ~/.ansible.cfg
@@ -14,7 +15,22 @@ Precedence order:
 4. config. file with default location i.e. /etc/ansible/ansible.cfg
 
 
+Host file:
+1. We can name it whatever we want and place that name in ansible conf file with path.
+2. Either we can do entry in ungrouped format or in grouped format.
+3. Host entry can be made in nested group also.
 
+
+Adhoc commands:
+
+Format: ansible        hosts                -m module_name    -a "arguments"
+    
+        Command    host_group_name
+                   localhost/all/group_name
+
+NOTE:
+ansible --version
+ansible all  --list-hosts
 
 
 
