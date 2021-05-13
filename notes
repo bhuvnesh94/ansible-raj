@@ -1,0 +1,24 @@
+Ansible configuration file
+1. Default location: /etc/ansible/ansible.cfg
+2. We can have conf file in  current directory
+3. We can put conf file on home directory of a user as hidden file ~/.ansible.cfg
+4. When conf. file is defined by env variable. 
+
+
+
+Precedence order:
+
+1. env variable has highest precedance:  $ export  ANSIBLE_CONFIG=/root/ansible.cfg
+2. config. file in present working directory i.e ansible.cfg
+3. config. file in home directory of a user as hidden file i.e ~/.ansible.cfg
+4. config. file with default location i.e. /etc/ansible/ansible.cfg
+
+
+
+
+
+
+
+
+
+
