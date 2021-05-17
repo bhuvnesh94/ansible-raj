@@ -29,12 +29,27 @@ Format: ansible        hosts                -m module_name    -a "arguments"
                    localhost/all/group_name
 
 NOTE:
-ansible --version
-ansible all  --list-hosts
+$ansible --version
+$ansible all  --list-hosts
+
+#listing all the modules in ansible
+$ansible-doc -l 
+
+total modules in ansible= 3387
+
+#ansible document open for a module
+$ansible-doc moule_name   (ex:- ansible-doc ping)
 
 
+$ansible dev -m shell -a "ls" -u admin  -k
+-u remote user
+-k ask ssh password on run time
 
-
+----------------------------------------------------
+task:
+1. Create directory at a specific location in linux
+2. Create a user with password in linux
+3. list all files in created directory.
 
 
 
