@@ -1,3 +1,5 @@
+Use ubuntu as ansible server----launch on aws free trial
+
 # ansible-raj
 Target machine- Windows
 Ansible machine- Linux

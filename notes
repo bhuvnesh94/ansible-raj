@@ -50,6 +50,18 @@ task:
 1. Create directory at a specific location in linux
 2. Create a user with password in linux
 3. list all files in created directory.
-
+---------------------------------------------------
+Windows modules:
+1. win_ping
+2. win_whoami
+3. win_shell                                                     Execute shell commands on target hosts           
+4. win_get_url                                                   Downloads file from HTTP, HTTPS, or FTP to node  
+5. win_copy                                                      Copies files to remote locations on windows hosts
+6. win_command                                                   Executes a command on a remote Windows node      
+7. win_chocolatey                                                Manage packages using chocolatey                 
+8. ec2_win_password                                              gets the default administrator password for ec2 
+9. win_package                                                   Installs/uninstalls an installable package       
+10. win_psmodule                                                  Adds or removes a Windows PowerShell module      
+11. win_region                                                    Set the region and format settings               
 
 
