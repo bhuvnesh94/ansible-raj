@@ -1,2 +1,2 @@
 [windows]
-52.90.132.236  ansible_port=5985 ansible_user=ansible ansible_password=Welcome@1  ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_transport=ntlm
+18.209.47.240  ansible_port=5985 ansible_user=ansible ansible_password=Welcome@1  ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_transport=ntlm

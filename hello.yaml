@@ -1,0 +1,15 @@
+---
+ - name: 1st play of playbook
+   hosts: all #use host group name defined in inventory file
+   gather_facts: false
+   tasks:
+    - name: listing windows files
+      win_shell: ls 
+    - name: current directory
+      win_shell: pwd
+    - name: whoami
+      win_shell: whoami
+    - name: downloading a file
+      win_get_url:
+        dest: C:\Users\ansible\bhanu
+        url: https://github.com/nginx/nginx/blob/master/docs/html/index.html

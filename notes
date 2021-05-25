@@ -64,4 +64,14 @@ Windows modules:
 10. win_psmodule                                                  Adds or removes a Windows PowerShell module      
 11. win_region                                                    Set the region and format settings               
 
+Examples: 
+$ansible all -m win_get_url -a 'dest=C:\\Users\\ansible\\bhanu  url=https://github.com/nginx/nginx/blob/master/docs/html/index.html'
+$ansible all -m win_shell -a "cat bhanu"
+$ansible all -m win_shell -a "ls"
+$ansible all -m win_shell -a "pwd"
+$ansible all -m win_shell -a "whoami"
+$ansible all -m win_get_url -a 'dest=C:\\Users\\ansible\\bhanu  url=https://github.com/nginx/nginx/blob/master/docs/html/index.html'
+Playbooks:
+File extension: .yaml or .yml
+Playbook starts with 3 hyphens
 
