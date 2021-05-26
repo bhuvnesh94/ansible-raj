@@ -1,0 +1,12 @@
+---
+ - name: 1st play of playbook
+   hosts: all #use host group name defined in inventory file
+   gather_facts: false
+   tasks:
+    - name: downloading exe file to install a software
+      win_file:
+        path: C:\Users\ansible\TreeSizeFreeSetup.exe
+        state: absent
+      #      win_get_url:
+      #        dest: C:\Users\ansible\TreeSizeFreeSetup.exe
+      #        url: https://downloads.jam-software.de/treesize_free/TreeSizeFreeSetup.exe

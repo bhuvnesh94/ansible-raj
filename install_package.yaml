@@ -1,0 +1,16 @@
+---
+ - name: 1st play of playbook
+   hosts: all #use host group name defined in inventory file
+   gather_facts: false
+   tasks:
+    - name: downloading exe file to install a software
+      win_get_url:
+        dest: C:\Users\ansible\TreeSizeFreeSetup.exe
+        url: https://downloads.jam-software.de/treesize_free/TreeSizeFreeSetup.exe
+
+    - name: installing
+      win_package:
+        path: C:\Users\ansible\TreeSizeFreeSetup.exe
+        state: present
+        arguments: /install  /norestart
+        product_id: '{0240359E-6A4C-4884-9E94-B397A02D893C}'

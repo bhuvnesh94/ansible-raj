@@ -75,3 +75,9 @@ Playbooks:
 File extension: .yaml or .yml
 Playbook starts with 3 hyphens
 
+
+Playbooks:
+1. win_package to install a packages
+2. win_file
+3. win_find
+4. 
