@@ -1,0 +1,16 @@
+---
+ - name: first play
+   hosts: all
+   ignore_errors: no
+   gather_facts: false
+   vars:
+     test: ls
+     test1: welcome
+   tasks:
+    - name: testing variables {{ test }}
+      win_shell: ls
+      vars:
+        test: helicopter
+
+    - name: testing again {{ test1 }}
+      win_shell: ls
