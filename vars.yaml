@@ -7,10 +7,12 @@
      test: ls
      test1: welcome
    tasks:
-    - name: testing variables {{ test }}
-      win_shell: ls
+    - name: testing variables {{ hello }}
+      win_shell: write-host "{{ hello }}"
       vars:
-        test: helicopter
+        test: ls
+      register: listing
+    - debug: var=listing
 
     - name: testing again {{ test1 }}
       win_shell: ls

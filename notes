@@ -80,4 +80,14 @@ Playbooks:
 1. win_package to install a packages
 2. win_file
 3. win_find
-4. 
+
+
+Ansible variables:
+
+1. Global scope
+ansible-playbook vars.yaml  -e test=pwd
+
+2. Playbook scope
+defined in playbook: vars: or vars_files:
+
+3. Host scope
