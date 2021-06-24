@@ -1,0 +1,8 @@
+---
+ - hosts: localhost
+   vars:
+     test: ls
+     test1: netstat -ntpl
+   tasks:
+    - name: testing {{ test }}
+      shell:  "{{ test1 }}"

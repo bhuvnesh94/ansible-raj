@@ -1,14 +1,2 @@
-[windows]
-35.175.184.9  
-
-[windows:vars]
-ansible_port=5985 
-ansible_user=ansible 
-ansible_password=Welcome@1  
-ansible_connection=winrm 
-ansible_winrm_server_cert_validation=ignore 
-ansible_winrm_transport=ntlm
-hello=windows
-
-
-#ansible_port=5985 ansible_user=ansible ansible_password=Welcome@1  ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_transport=ntlm
+[hello]
+192.168.1.8

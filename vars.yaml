@@ -8,7 +8,7 @@
      test1: welcome
    tasks:
     - name: testing variables {{ hello }}
-      win_shell: write-host "{{ hello }}"
+      win_shell: write-host {{ hello }}
       vars:
         test: ls
       register: listing

@@ -1,0 +1,11 @@
+---
+ - hosts: localhost
+   #gather_facts: yes
+   become: true
+   tasks:
+    - debug:
+        msg: My machine ip is {{ ansible_default_ipv4.address }} and my machine hostname is {{ ansible_hostname }} having total ram is {{ ansible_memtotal_mb }}
+
+    - copy:
+        content: My machine ip is {{ ansible_default_ipv4.address }} and my machine hostname is {{ ansible_hostname }} having total ram is {{ ansible_memtotal_mb }}
+        dest: /var/www/html/index.html

@@ -1,0 +1,20 @@
+---
+ - name: first play
+   hosts: localhost
+   become: true
+   tasks:
+    - name: install software
+      apt:
+        name: "{{ item }}"
+        state: absent
+        purge: yes
+      loop:
+       - nginx
+       - mysql-server
+       - apache2
+ - name: second play
+   hosts: hello
+   become: true
+   tasks:
+    - name: deleting
+      shell: whoami
