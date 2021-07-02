@@ -1,0 +1,8 @@
+---
+ - hosts: localhost
+   become: true
+   tasks:
+    - name: using template
+      template:
+        src: info1.j2
+        dest: /var/www/html/index.html
